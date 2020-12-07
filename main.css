@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: url(/assets/bg2.png);
+  background-image: url(./assets/bg2.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -19,7 +19,7 @@ body {
 
 .card-wrapper {
   position: relative;
-  height: 70%;
+  min-height: 70%;
   width: 25%;
   background: linear-gradient(
     112.91deg,
@@ -42,12 +42,13 @@ body {
 .profile-img {
   width: 12em;
   height: 12em;
-  background-image: url(/assets/me.jpg);
+  background-image: url(./assets/me.jpg);
   background-size: cover;
   background-position: 0px;
   border-radius: 50%;
   margin-bottom: 2.1rem;
   position: relative;
+  margin-top: 2rem;
 }
 
 .profile-img::before {
@@ -113,4 +114,5 @@ a {
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  margin-bottom: 2rem;
 }
